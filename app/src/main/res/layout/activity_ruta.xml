@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragmentRUTA">
+
+    <!-- MapFragment -->
+    <fragment
+        android:id="@+id/mapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="780dp"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_above="@+id/infoLayout"/>
+
+    <!-- Buttons and EditTexts -->
+    <LinearLayout
+        android:id="@+id/overlayLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/infoLayout"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+        <Button
+            android:id="@+id/btnSelectOrigin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ubicación Actual"
+            android:textColor="#F7F2F8"/>
+
+        <Button
+            android:id="@+id/btnSelectDestination"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Universidad Andina"
+            android:textColor="#F7F2F8"/>
+
+
+
+
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="calcular"
+            android:textColor="#F7F2F8"/>
+    </LinearLayout>
+
+    <!-- GridLayout for Info -->
+    <GridLayout
+        android:id="@+id/infoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:columnCount="2"
+        android:rowCount="3"
+        android:padding="5dp">
+
+        <!-- Existing TextViews and EditTexts (unchanged) -->
+
+        <TextView
+            android:id="@+id/txtDistanceLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Distancia: "
+            android:layout_column="0"
+            android:layout_row="0"
+            android:layout_gravity="center"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/txtDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese la distancia"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:layout_gravity="center"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/txtTimeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tiempo: "
+            android:layout_column="0"
+            android:layout_row="1"
+            android:layout_gravity="center"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/txtTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese el tiempo"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:layout_gravity="center"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/txtPriceLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Precio: "
+            android:layout_column="0"
+            android:layout_row="2"
+            android:layout_gravity="center"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/txtPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese el precio"
+            android:layout_column="1"
+            android:layout_row="2"
+            android:layout_gravity="center"
+            android:textSize="20sp"/>
+    </GridLayout>
+
+</RelativeLayout>
+

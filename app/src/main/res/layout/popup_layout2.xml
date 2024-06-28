@@ -1,0 +1,50 @@
+<!-- res/layout/popup_layout.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/txtLugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Ruta"
+        android:gravity="center"
+        android:textSize="38sp"
+        android:background="#FBFAFA"
+        android:textColor="#050505" />
+
+    <TextView
+        android:id="@+id/txtLatitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Casa"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:background="#FBFAFA"
+        android:textColor="#050505"/>
+
+    <TextView
+        android:id="@+id/txtLongitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Universidad"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:background="#FBFAFA"
+        android:textColor="#050505"/>
+
+    <ImageView
+        android:id="@+id/popup_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rias_bunny"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
